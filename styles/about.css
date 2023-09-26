@@ -1,0 +1,143 @@
+/* css-правила About */
+
+.about {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section__header {
+  color: #0C0C0E;
+  font-family: 'Forum', cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.section__line {
+  border: 1px solid black;
+  width: 50px;
+  margin: 0 auto;
+}
+.section__text {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin: 40px auto 20px;
+}
+.about__text {
+  letter-spacing: 0;
+}
+
+.about__slider__wrapper {
+  position: relative;
+  left: 0px;
+  max-width: 1400px;
+  overflow: hidden;
+  display: flex;
+}
+.about__slider__carousel {
+  position: relative;
+  left: 0px;
+  display: flex;
+  gap: 0px;
+  margin-bottom: 40px;
+}
+.slider__images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__img {
+  width: 100%;
+  height: 36.4vw;
+  object-fit: cover;
+}
+
+.slider__pagination {
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background-color:#000;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #BB945F;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+  cursor: default;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  display: none;
+}
+.slider__dots:nth-child(4) {
+  display: none;
+}
+.slider__dots:nth-child(5) {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: block;
+    color: #000;
+  }
+  .swiper-button-next {
+    right: 48px;
+  }
+  .swiper-button-prev {
+    left: 63px;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 12px;
+  }
+  #pag {
+    top: -16px;
+  }
+  
+  .slider__img {
+    display: block;
+    width: 450px;
+    height: 560px;
+    object-fit: cover;
+    margin: auto;
+  }
+  .swiper-slide {
+    height: 560px;
+  }
+ 
+ .slider__images {
+  display: flex;
+  justify-content: center;
+ }
+}
+
+@media (max-width: 770px) {
+  .slider__pagination {
+    margin: 0px auto 55px;
+  }
+  .swiper-button-next {
+    right: 30px;
+  }
+  .swiper-button-prev {
+    left: 50px;
+  }
+}
+

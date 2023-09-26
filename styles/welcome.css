@@ -1,0 +1,376 @@
+/* css стили welcome */
+.welcome {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/welcome_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome__gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+}
+
+.welcome__text {
+  position: relative;
+  top: 220px;
+  left: 0;
+  padding: 35px 40px;
+  width: 600px;
+  height: 220px;
+  background: #0C0C0E;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Forum', cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__window__register,
+.modal__window__login, 
+.modal__window__profile,
+.modal__window__buy__card {
+  background-color: rgba(0,0,0,0.4);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal__active {
+  display: flex;
+}
+
+.modal__window__register__content,
+.modal__window__login__content,
+.modal__window__profile__content,
+.modal__window__buy__card__content {
+  position: relative;
+  width: 250px;
+height: 382px;
+background: #FFF;
+padding: 20px 25px;
+}
+
+.modal__window__profile__content {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  padding: 0;
+}
+.modal__window__buy__card__content {
+  padding: 0;
+  width: 640px;
+  height: 540px;
+}
+.modal__window__buy__card__header {
+  padding-top: 20px;
+  width: 100%;
+  background: #0C0C0E;
+  height: 60px;
+  color: #FFF;
+text-align: center;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 50% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+.modal__buy__data {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 35px;
+}
+.user__info {
+  width: 170px;
+height: 403px;
+flex-shrink: 0;
+background: #0C0C0E;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+
+.user__letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+height: 80px;
+flex-shrink: 0;
+background: #FFF;
+color: #BB945F;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+text-transform: capitalize;
+}
+
+.user__name__surname {
+  text-align: center;
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+min-height: 30px;
+flex-shrink: 0;
+background: #FFF;
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+}
+
+.user__profile {
+  padding: 40px 25px 40px 20px;
+}
+
+.modal__window__login__content {
+  height: 262px;
+}
+
+.modal__window__register__content > img,
+.modal__window__login__content > img,
+.modal__window__buy__card__content > img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.modal__window__profile__content > img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+#close__modal__buy__card {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.user__profile > h3 {
+  color: #000;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 50% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+
+.user__profile > .card__info {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.user__profile > .card__info > .card__info__item > p:first-child {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.user__profile > .card__info > .card__info__item > p:last-child {
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.rented__books {
+  margin-top: 20px;
+}
+.rented__books > p {
+  color: #0C0C0E;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 80% */
+}
+
+.rented__books > ul {
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 1px;
+text-transform: capitalize;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-height: 60px;
+  overflow-y: auto;
+  width: 380px;
+}
+.rented__books > ul >  li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  list-style: disc;
+}
+.profile__card__number {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  color: #0C0C0E;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+}
+.my-profile__modal__card-number {
+  color: #BB945F;
+}
+.clipboard {
+  border: none;
+  background-color: white;
+  padding-top: 2px;
+}
+
+.modal__window__register__content > h3,
+.modal__window__login__content > h3 {
+  color: #000;
+text-align: center;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+letter-spacing: 0.4px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+#registrationForm label,
+#loginForm label,
+#buyCardForm label {
+  display: block;
+  color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.3px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#buyCardForm label:first-child {
+  margin-top: 0;
+}
+/* #buyCardForm label:nth-child(2),
+#buyCardForm label:nth-child(4) {
+  margin-top: 20px;
+} */
+
+#cvc {
+  margin-bottom: 10px;
+}
+#city {
+  margin-bottom: 2px;
+}
+
+.user-icon:hover {
+  background-color: #0056b3; /* Измененный цвет фона при наведении курсора */
+}
+#registrationForm input,
+#loginForm input,
+#buyCardForm input {
+  cursor: text;
+  width: 200px;
+height: 20px;
+flex-shrink: 0;
+border: 1px solid #BB945F;
+}
+
+#registrationForm > .buy__btn,
+#loginForm > .buy__btn {
+  margin-top: 18px;
+}
+
+.modal__window__register__content > p,
+.modal__window__login__content > p {
+  color: #000;
+text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 10px;
+}
+
+#registrationForm__login-btn,
+#registrationForm__register-btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 10px;
+  color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+text-decoration-line: underline;
+}
+
+#buyCardForm span {
+  position: relative;
+  top: 8px;
+  left: 20px;
+  color: #0C0C0E;
+font-family: Inter;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 100% */
+letter-spacing: 1px;
+}
+
+.modal__buy__description {
+  width: 330px;
+  color: #8E8E8E;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+letter-spacing: 2px;
+}
